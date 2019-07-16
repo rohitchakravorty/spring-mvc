@@ -7,20 +7,11 @@ import org.springframework.stereotype.Component;
 
 @ComponentScan("main.java")
 public class User {
-    String name;
-    int id;
-    @Autowired
-    public User(String name, int id) {
-        this.name = name;
-        this.id = id;
-    }
+   String userName;
+   String password;
 
-    public int getId() {
-        return id;
+    public User(String userName, String password) {
+        this.userName = userName;
+        this.password = password;
     }
-
-    public String getName() {
-        return name;
-    }
-
 }
